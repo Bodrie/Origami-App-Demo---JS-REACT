@@ -9,6 +9,17 @@
           "id": 2,
           "content": "Another content here...",
           "author": "Sasho"
+      },
+      {
+          "id": 3,
+          "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic praesentium, odio quasi molestiae saepe quae cupiditate consectetur adipisci impedit rerum?",
+          "author": "Stamat"
+      },
+      {
+        "id": 4,
+        "content": "Recepta za pileshka supa sys zelenchuci, :)",
+        "author": "Dobri"
       }
+
   ]
 }

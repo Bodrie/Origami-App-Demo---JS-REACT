@@ -1,11 +1,21 @@
+import Post from '../Post/Post';
 import './Main.css';
 
-const Main = () => {
+const Main = ( {posts} ) => {
+    console.log(posts);
     return (
         <main className="main-container">
             <h1>Soooome heading...</h1>
-            
-            <p>Some posts...</p>
+
+            <div className="posts">
+                {posts.map(x =>
+                    <Post 
+                        key={x.id}
+                        content={x.content}
+                        author={x.author}
+                    />
+                )}
+            </div>
         </main>
     );
 }
