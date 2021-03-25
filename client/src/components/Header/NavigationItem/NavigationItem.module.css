@@ -3,6 +3,11 @@
     text-decoration: none;
 }
 
+.navListItem:hover {
+    color: #ffa000;
+    text-decoration: none;
+}
+
 .listItem {
     display: inline-block;
     height: auto;

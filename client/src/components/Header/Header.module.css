@@ -1,6 +1,6 @@
 .navigation {
   width: 100%;
-  height: 14vh;
+  height: 17.5vh;
   background-color: #234465;
   color: white;
   position: fixed;
@@ -22,10 +22,10 @@
 .listItem:not(:first-child) {
   padding: 2%;
   margin-top: 1.5%;
-  border-top: 2px solid #ffa000;
+  border-top: 5px solid #ffa000;
 }
 
-.listItem:hover {
+.listItem:hover:not(:first-child) {
   border-top: none;
   border-bottom: 2px solid #ffa000;
   font-weight: bold;

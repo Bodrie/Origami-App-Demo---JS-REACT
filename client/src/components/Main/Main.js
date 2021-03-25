@@ -5,7 +5,7 @@ const Main = ( {posts} ) => {
     console.log(posts);
     return (
         <main className="main-container">
-            <h1>Soooome heading...</h1>
+            <h1>All posts!</h1>
 
             <div className="posts">
                 {posts.map(x =>

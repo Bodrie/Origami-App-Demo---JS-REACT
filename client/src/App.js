@@ -5,6 +5,7 @@ import * as postService from './services/postService';
 import Header from './components/Header/Header';
 import Menu from './components/Menu/Menu';
 import Main from './components/Main/Main';
+import Footer from './components/Footer/Footer';
 import style from './App.module.css';
 
 //function App() {
@@ -40,12 +41,16 @@ class App extends Component {
     render() {
         return (
             <div className={style.app}>
-            <Header />
+                <Header />
 
-            <div className={style.container}>
-                <Menu />
-                <Main posts={this.state.posts}/>
-            </div>
+                <div className={style.container}>
+                    <Menu />
+                    <Main posts={this.state.posts}/>
+                </div>
+
+                <div className={style.footer}>
+                    <Footer />
+                </div>
         </div>
         );
     }
