@@ -6,6 +6,9 @@ import * as postService from './services/postService';
 import Header from './components/Header/Header';
 import Menu from './components/Menu/Menu';
 import Main from './components/Main/Main';
+import About from './components/About/About';
+import ContactUs from './components/ContactUs/ContactUs';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 import Footer from './components/Footer/Footer';
 import style from './App.module.css';
 
@@ -46,7 +49,17 @@ class App extends Component {
 
                 <div className={style.container}>
                     <Menu />
-                    <Main posts={this.state.posts}/>
+
+                    <Switch>
+                        <Route path="/" exact/>
+                        <Route path="/all-posts">
+                            <Main posts={this.state.posts}/>
+                        </Route>
+                        <Route path="/about" exact component={About} />
+                        <Route path="/contact-us" component={ContactUs} />
+                        <Route render={ErrorPage} />
+                    </Switch>
+
                 </div>
 
                 <div className={style.footer}>
